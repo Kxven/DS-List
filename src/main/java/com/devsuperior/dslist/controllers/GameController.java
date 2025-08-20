@@ -20,7 +20,8 @@ public class GameController{
     public GameDTO findoAll(@PathVariable Long id){
         GameDTO result = gameService.findById(id);
         return result;
-    } @GetMapping
+    }
+    @GetMapping
     public List<GameMinDTO> findoAll(){
         List<GameMinDTO> result = gameService.findAll();
         return result;
